@@ -1,0 +1,63 @@
+# =========================
+# ENV & CONFIG FILES
+# =========================
+.env
+config.php
+
+# =========================
+# DEPENDENCIES
+# =========================
+vendor/
+composer.lock
+composer.phar
+
+# =========================
+# UPLOADS (User Data)
+# =========================
+uploads/*
+!uploads/.gitkeep
+
+# =========================
+# CACHE / LOG FILES
+# =========================
+*.log
+*.cache
+*.tmp
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / EDITOR FILES
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# TEST / DEBUG FILES
+# =========================
+debug.log
+error.log
+
+# =========================
+# DATABASE FILES (IMPORTANT)
+# =========================
+*.sql
+*.sqlite
+
+# =========================
+# NODE (if used later)
+# =========================
+node_modules/
+package-lock.json
+
+# =========================
+# MISC
+# =========================
+*.bak
+*.swp

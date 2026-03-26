@@ -1,0 +1,223 @@
+/* -----------------------------------
+   Global Layout & Body Styling
+----------------------------------- */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Wrapper for Sidebar + Page Content */
+#wrapper {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f4f6f9;
+}
+
+/* -----------------------------------
+   Sidebar Styling
+----------------------------------- */
+#sidebar-wrapper {
+  width: 260px;
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #ffffff;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar {
+  padding: 25px 15px;
+}
+
+.sidebar h4 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+/* Sidebar Links */
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  color: #d1d5db;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebar .nav-link i {
+  margin-right: 12px;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  transition: color 0.25s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(13, 110, 253, 0.3);
+  transform: translateX(5px);
+}
+
+.sidebar .nav-link:hover i {
+  color: #ffffff;
+}
+
+/* -----------------------------------
+   Page Content Styling
+----------------------------------- */
+#page-content-wrapper {
+  flex-grow: 1;
+  padding: 25px 30px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+/* Headings */
+h2, h3, h4 {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* -----------------------------------
+   Dashboard Cards (Modern)
+----------------------------------- */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.card-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* -----------------------------------
+   Announcement & Achievement Sections
+----------------------------------- */
+.card-header {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+}
+
+.list-group-item {
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  border-left: 4px solid #0d6efd;
+  background-color: #ffffff;
+  margin-bottom: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #f1f5f9;
+}
+
+/* -----------------------------------
+   Buttons Styling
+----------------------------------- */
+.btn-sm {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-success {
+  background-color: #198754;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+}
+
+.btn-outline-success:hover {
+  background-color: #198754;
+  color: #fff;
+}
+
+/* -----------------------------------
+   Footer
+----------------------------------- */
+footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* -----------------------------------
+   Responsive Adjustments
+----------------------------------- */
+@media (max-width: 992px) {
+  #sidebar-wrapper {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  #page-content-wrapper {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
